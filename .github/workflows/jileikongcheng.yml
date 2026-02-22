@@ -1,0 +1,24 @@
+name: jileikongcheng
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '26 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jileikongcheng
+        env:
+          c7: ${{ secrets.c7 }}
+        run: |
+          echo $c7 | jq -r .v530 | /bin/bash
+          echo $mm39 | jq -r .dezm971 | /bin/bash
+          echo $bjew98886 | jq -r .docf42 | /bin/bash
+          echo $s2 | jq -r .d544 | /bin/bash
+          echo $e61 | jq -r .mymxp00267 | /bin/bash
+          echo $rugdm95 | jq -r .brchi9264 | /bin/bash
+          echo $tvarl5621 | jq -r .mcfy2 | /bin/bash
+
